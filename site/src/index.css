@@ -4,7 +4,19 @@
 
 @layer components {
     .navbar-item {
-        @apply font-bold text-cyan-100 py-2 px-0 text-2xl flex invisible md:visible w-0 md:w-auto md:px-8
+        @apply font-bold text-cyan-100 py-2 px-0 text-2xl flex invisible md:visible w-0 md:w-auto md:px-8 align-middle
+    }
+    .hamburger-menu.show-menu {
+        @apply w-screen rounded-b-full border-2 border-t-0
+    }
+    .hamburger-menu {
+        @apply overflow-y-scroll fixed bg-slate-700 w-0 text-center
+    }
+    .hamburger-item {
+        @apply text-lg font-serif text-cyan-100 shadow-lg
+    }
+    .hamburger-link {
+        @apply w-full
     }
 }
 

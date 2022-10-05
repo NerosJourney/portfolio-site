@@ -1,19 +1,27 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 //border-b-4 border-b-rose-500
 
 const NavBar = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <div className="flex py-4 bg-slate-700 drop-shadow-2xl font-serif">
-      <Link
-        to="/"
-        className="navbar-item mr-auto text-cyan-500 text-3xl visible w-auto px-8"
-      >
-        Bailey Wimer
-      </Link>
-      <HorizontalNav />
-      <HamburgerNav />
+    <div>
+      <div className="flex pt-4 bg-slate-700 drop-shadow-2xl shadow-2xl font-serif">
+        <Link
+          to="/"
+          className="navbar-item mr-auto text-cyan-500 text-3xl visible w-auto px-8 mb-0"
+        >
+          Nero
+        </Link>
+        <HorizontalNav />
+        <HamburgerNavButton
+          navbarOpen={navbarOpen}
+          setNavbarOpen={setNavbarOpen}
+        />
+      </div>
+      <HamburgerNavMenu navbarOpen={navbarOpen} />
     </div>
   );
 };
@@ -23,6 +31,9 @@ const HorizontalNav = () => {
     <>
       <Link to="/" className="navbar-item">
         Home
+      </Link>
+      <Link to="/experience" className="navbar-item">
+        Experience
       </Link>
       <Link to="/projects" className="navbar-item">
         Projects
@@ -34,9 +45,7 @@ const HorizontalNav = () => {
   );
 };
 
-const HamburgerNav = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
-
+const HamburgerNavButton = ({ navbarOpen, setNavbarOpen }) => {
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
   };
@@ -46,8 +55,35 @@ const HamburgerNav = () => {
       onClick={handleToggle}
       className="font-bold text-cyan-100 py-2 px-6 text-2xl flex md:invisible md:w-0 md:px-0"
     >
-      {navbarOpen ? "Close" : "Open"}
+      {navbarOpen ? <FaTimes size={50} /> : <FaBars size={50} />}
     </button>
+  );
+};
+
+const HamburgerNavMenu = ({ navbarOpen }) => {
+  return (
+    <ul className={`hamburger-menu ${navbarOpen ? " show-menu" : ""}`}>
+      <li className="hamburger-item">
+        <Link className="hamburger-link" to="/">
+          Home
+        </Link>
+      </li>
+      <li className="hamburger-item">
+        <Link className="hamburger-link" to="/experience">
+          Experience
+        </Link>
+      </li>
+      <li className="hamburger-item">
+        <Link className="hamburger-link" to="/projects">
+          Projects
+        </Link>
+      </li>
+      <li className="hamburger-item">
+        <Link className="hamburger-link" to="/about">
+          About
+        </Link>
+      </li>
+    </ul>
   );
 };
 

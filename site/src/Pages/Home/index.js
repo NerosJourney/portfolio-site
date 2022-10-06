@@ -9,7 +9,7 @@ const Home = () => {
         <NavBar />
         <div className="bg-slate-700 text-center py-20">
           <img
-            className="rounded-full flex-auto self-center align-middle mx-auto md:w-96 h-auto my-8 w-48"
+            className="rounded-full flex-auto self-center align-middle mx-auto md:w-96 h-auto my-8 w-48 border-rose-500 border-4"
             src={ProfileImage}
             alt="Bailey Wimer"
           />

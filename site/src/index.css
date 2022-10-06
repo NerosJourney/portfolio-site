@@ -15,9 +15,6 @@
     .hamburger-item {
         @apply text-lg font-serif text-cyan-100 shadow-lg
     }
-    .hamburger-link {
-        @apply w-full
-    }
 }
 
 html,body

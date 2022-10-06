@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes, FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 //border-b-4 border-b-rose-500
 
@@ -8,7 +8,7 @@ const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <div>
-      <div className="flex pt-4 bg-slate-700 drop-shadow-2xl shadow-2xl font-serif">
+      <div className="flex pt-4 bg-slate-700 drop-shadow-2xl shadow-2xl font-serif border-b-4 border-b-rose-500">
         <Link
           to="/"
           className="navbar-item mr-auto text-cyan-500 text-3xl visible w-auto px-8 mb-0"
@@ -64,24 +64,16 @@ const HamburgerNavMenu = ({ navbarOpen }) => {
   return (
     <ul className={`hamburger-menu ${navbarOpen ? " show-menu" : ""}`}>
       <li className="hamburger-item">
-        <Link className="hamburger-link" to="/">
-          Home
-        </Link>
+        <Link to="/">Home</Link>
       </li>
       <li className="hamburger-item">
-        <Link className="hamburger-link" to="/experience">
-          Experience
-        </Link>
+        <Link to="/experience">Experience</Link>
       </li>
       <li className="hamburger-item">
-        <Link className="hamburger-link" to="/projects">
-          Projects
-        </Link>
+        <Link to="/projects">Projects</Link>
       </li>
       <li className="hamburger-item">
-        <Link className="hamburger-link" to="/about">
-          About
-        </Link>
+        <Link to="/about">About</Link>
       </li>
     </ul>
   );

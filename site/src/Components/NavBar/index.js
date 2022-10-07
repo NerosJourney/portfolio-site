@@ -8,7 +8,7 @@ const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <div className="z-40">
-      <div className="flex pt-4 bg-slate-700 drop-shadow-2xl shadow-2xl font-serif border-b-4 border-b-rose-500">
+      <div className="flex pt-4 bg-slate-700 drop-shadow-2xl shadow-2xl font-mono border-b-4 border-b-rose-500">
         <Link
           to="/"
           className="navbar-item mr-auto text-cyan-500 text-5xl visible w-auto px-8 mb-0"
@@ -38,8 +38,8 @@ const HorizontalNav = () => {
       <Link to="/projects" className="navbar-item">
         Projects
       </Link>
-      <Link to="/about" className="navbar-item">
-        About
+      <Link to="/skills" className="navbar-item">
+        Skills
       </Link>
     </>
   );

@@ -16,7 +16,7 @@
         @apply overflow-y-scroll bg-slate-700 w-screen text-center h-0
     }
     .hamburger-item {
-        @apply text-lg font-serif text-cyan-100 shadow-lg
+        @apply text-lg text-cyan-100 shadow-lg font-mono font-bold
     }
     .hide-mobile {
         @apply invisible md:visible h-0 md:h-auto

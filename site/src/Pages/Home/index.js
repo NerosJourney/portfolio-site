@@ -21,28 +21,30 @@ const Home = () => {
           <p className="text-cyan-100 my-12 md:text-3xl text-2xl font-mono">
             Software Developer - Student - Researcher
           </p>
-          <a
-            className="text-cyan-100 my-12 md:text-3xl text-2xl m-4 py-5 px-2 hov-highlight font-mono"
-            href="https://github.com/NerosJourney"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithubSquare className="inline pb-2 text-rose-500" size="70" />
-            <p className="inline p-2">NerosJourney</p>
-          </a>
-          <a
-            className="text-cyan-100 my-12 md:text-3xl text-2xl m-4 py-5 px-2 hov-highlight font-mono"
-            href="https://www.linkedin.com/in/bwimer3/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin className="inline pb-2 text-rose-500" size="70" />
-            <p className="inline p-2">bwimer3</p>
-          </a>
-          <samp className="text-cyan-100 my-12 md:text-3xl text-2xl m-4 py-5 px-2 hov-highlight font-mono">
-            <MdOutlineEmail className="inline pb-2 text-rose-500" size="70" />
-            <p className="inline p-2">bwimer3@kent.edu</p>
-          </samp>
+          <div className="grid md:grid-cols-3 grid-cols1">
+            <a
+              className="text-cyan-100 md:my-12 md:text-3xl text-2xl m-4 hov-highlight font-mono"
+              href="https://github.com/NerosJourney"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithubSquare className="inline pb-2 text-rose-500" size="70" />
+              <p className="inline p-2">NerosJourney</p>
+            </a>
+            <a
+              className="text-cyan-100 md:my-12 md:text-3xl text-2xl m-4 hov-highlight font-mono"
+              href="https://www.linkedin.com/in/bwimer3/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="inline pb-2 text-rose-500" size="70" />
+              <p className="inline p-2">bwimer3</p>
+            </a>
+            <samp className="text-cyan-100 md:my-12 md:text-3xl text-2xl m-4 hov-highlight font-mono">
+              <MdOutlineEmail className="inline pb-2 text-rose-500" size="70" />
+              <p className="inline p-2">bwimer3@kent.edu</p>
+            </samp>
+          </div>
         </div>
       </div>
     </>

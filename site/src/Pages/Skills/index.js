@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../../Components/NavBar";
 
-const About = () => {
+const Skills = () => {
   return (
     <>
       <div className="bg-slate-700 h-screen">
@@ -12,4 +12,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Skills;

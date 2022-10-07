@@ -9,7 +9,7 @@ const Projects = () => {
     <>
       <div className="bg-slate-700 h-screen">
         <NavBar />
-        <p className="text-cyan-100 font-serif text-6xl px-10 pt-10 font-extrabold text-center">
+        <p className="text-cyan-100 font-mono text-6xl px-10 pt-10 font-extrabold text-center">
           Projects
         </p>
         <div className="bg-slate-700 py-4">
@@ -82,10 +82,10 @@ const ProjectItem = ({ name, desc, img, sublink = "" }) => {
           alt="Project"
         />
         <div className="px-2">
-          <p className="text-2xl md:text-5xl text-cyan-500 rounded-r-lg rounded-b-none border-b-rose-500 border-b-2 font-serif">
+          <p className="text-2xl md:text-5xl text-cyan-500 rounded-r-lg rounded-b-none border-b-rose-500 border-b-2 font-mono">
             {name}
           </p>
-          <p className="text-lg md:text-3xl text-cyan-100">{desc}</p>
+          <p className="text-lg md:text-3xl text-cyan-100 font-mono">{desc}</p>
         </div>
       </Link>
     </li>

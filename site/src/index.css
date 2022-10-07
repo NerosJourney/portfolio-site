@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+    .hov-highlight {
+        @apply hover:bg-slate-800 hover:rounded-full transition-all ease-linear
+    }
     .navbar-item {
-        @apply font-bold text-cyan-100 py-2 px-0 text-2xl flex invisible md:visible w-0 md:w-auto md:px-8 align-middle hover:bg-slate-800 hover:rounded-full transition-all ease-linear
+        @apply font-bold text-cyan-100 py-2 px-0 text-2xl flex invisible md:visible w-0 md:w-auto md:px-8 align-middle hov-highlight
     }
     .hamburger-menu.show-menu {
         @apply rounded-b-lg border-2 border-t-0 h-auto

@@ -53,7 +53,7 @@ const HamburgerNavButton = ({ navbarOpen, setNavbarOpen }) => {
   return (
     <button
       onClick={handleToggle}
-      className="font-bold text-cyan-100 py-2 px-6 text-2xl flex md:invisible md:w-0 md:px-0"
+      className="font-bold text-cyan-100 py-2 px-6 text-2xl flex md:invisible md:w-0 md:px-0 md:h-0 h-auto hov-highlight"
     >
       {navbarOpen ? <FaTimes size={50} /> : <FaBars size={50} />}
     </button>

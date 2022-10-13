@@ -6,12 +6,12 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 const Experience = () => {
   return (
     <>
-      <div className="bg-slate-700 h-screen">
+      <div className="bg-slate-700">
         <NavBar />
         <div className="bg-slate-700 text-center py-10">
-          {/* <div className="z-0 left-[49vw] right[49vw] top-32 bottom-2 bg-rose-500 absolute text-rose-500">
+          <div className="z-0 left-[49vw] right[49vw] top-32 bottom-8 bg-rose-500 absolute text-rose-500 hide-mobile">
             <p className="invisible">test</p>
-          </div> */}
+          </div>
           <LeftTimelineExperience
             role="Assistant Store Manager"
             date="Jan 2022 - Jan 2023"
@@ -25,36 +25,6 @@ const Experience = () => {
             company="Dairy Queen"
           />
           <LeftTimelineExperience
-            role="Assistant Store Manager"
-            date="Jan 2022 - Jan 2023"
-            desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
-            company="Dairy Queen"
-          />
-          <RightTimelineExperience
-            role="Assistant Store Manager"
-            date="Jan 2022 - Jan 2023"
-            desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
-            company="Dairy Queen"
-          />
-          <LeftTimelineExperience
-            role="Assistant Store Manager"
-            date="Jan 2022 - Jan 2023"
-            desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
-            company="Dairy Queen"
-          />
-          <RightTimelineExperience
-            role="Assistant Store Manager"
-            date="Jan 2022 - Jan 2023"
-            desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
-            company="Dairy Queen"
-          />
-          <LeftTimelineExperience
-            role="Assistant Store Manager"
-            date="Jan 2022 - Jan 2023"
-            desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
-            company="Dairy Queen"
-          />
-          <RightTimelineExperience
             role="Assistant Store Manager"
             date="Jan 2022 - Jan 2023"
             desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
@@ -134,7 +104,7 @@ const RightExperiencePopout = ({ role, date, desc }) => {
 
 const MobileExperiencePopout = ({ role, date, desc }) => {
   return (
-    <div className="md:peer-hover:invisible md:hover:invisible md:peer-hover:h-0 md:hover:h-0 hover:h-auto peer-hover:h-auto h-0 peer-hover:visible hover:visible invisible text-left m-2 p-2 bg-slate-800 border-rose-500 border-2 rounded-lg ">
+    <div className="md:peer-hover:invisible md:hover:invisible md:peer-hover:h-0 md:hover:h-0 hover:h-auto peer-hover:h-auto h-0 peer-hover:visible hover:visible invisible text-left md:m-8 m-2 p-2 bg-slate-800 border-rose-500 border-2 rounded-lg ">
       <p className="text-2xl md:text-5xl text-cyan-500 rounded-r-lg rounded-b-none border-b-rose-500 border-b-2 font-mono">
         {role}
       </p>

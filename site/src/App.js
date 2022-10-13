@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
-import Skills from "./Pages/Skills";
+import Bio from "./Pages/Bio";
 import Projects from "./Pages/Projects";
 import Experience from "./Pages/Experience";
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/skills" element={<Skills />} />
+        <Route path="/bio" element={<Bio />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
       </Routes>

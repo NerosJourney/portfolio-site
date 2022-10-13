@@ -38,8 +38,8 @@ const HorizontalNav = () => {
       <Link to="/projects" className="navbar-item">
         Projects
       </Link>
-      <Link to="/skills" className="navbar-item">
-        Skills
+      <Link to="/bio" className="navbar-item">
+        Bio
       </Link>
     </>
   );
@@ -73,7 +73,7 @@ const HamburgerNavMenu = ({ navbarOpen }) => {
         <Link to="/projects">Projects</Link>
       </li>
       <li className="hamburger-item">
-        <Link to="/about">About</Link>
+        <Link to="/bio">Bio</Link>
       </li>
     </ul>
   );

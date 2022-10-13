@@ -79,7 +79,7 @@ const ProjectItem = ({ name, desc, img, sublink = "" }) => {
         <img
           className="w-1/4 md:w-[15vw] hover:w-1/4 rounded-l-lg border-rose-500 border-r-2 object-cover transition-all ease-in-out"
           src={img}
-          alt="Project"
+          alt={name}
         />
         <div className="px-2">
           <p className="text-2xl md:text-5xl text-cyan-500 rounded-r-lg rounded-b-none border-b-rose-500 border-b-2 font-mono">

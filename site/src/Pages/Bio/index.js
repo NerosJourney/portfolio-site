@@ -35,10 +35,25 @@ const Bio = () => {
               <p className="text-2xl md:text-5xl text-cyan-500 rounded-r-lg rounded-b-none border-b-rose-500 border-b-2 font-mono">
                 Skills
               </p>
-              <Skill name="Test" />
-              <Skill name="Test" />
-              <Skill name="Test" />
-              <Skill name="Test" />
+              <Skill name="C++" bar_percent={90} />
+              <Skill name="Python" bar_percent={75} />
+              <Skill name="Java" bar_percent={60} />
+              <Skill name="JavaScript" bar_percent={50} />
+              <p className="text-xl md:text-4xl text-cyan-100 font-mono text-left ">
+                Others:
+              </p>
+              <SkillList
+                title="Languages (cont.)"
+                list="HTML, CSS, C#, Lua, R"
+              />
+              <SkillList
+                title="Tools"
+                list="Git/GitHub, Linux, MySQL, LaTeX, Arduino"
+              />
+              <SkillList
+                title="Miscellaneuous"
+                list="Robot Operating System (ROS), PCB Design, 3D Modelling/Printing"
+              />
             </div>
           </div>
           <div className="row-span-1 col-span-2 border-2 border-rose-500 rounded-3xl m-2">
@@ -71,15 +86,30 @@ const Bio = () => {
   );
 };
 
-const Skill = ({ name, bar_img }) => {
+const Skill = ({ name, bar_percent }) => {
   return (
-    <div className="text-xl md:text-4xl text-cyan-100 rounded-r-lg rounded-b-none border-b-cyan-500 border-b-2 font-mono">
-      <p className="text-left pl-8">{name}:</p>
-      <img
-        src={ProfileImage}
-        className="object-cover w-full h-12 mb-2"
-        alt={name}
-      />
+    <div className="text-xl md:text-4xl text-cyan-100 border-b-cyan-500 border-b-2 font-mono">
+      <p className="text-left my-1">{name}:</p>
+      <ProgressBar bar_percent={bar_percent} />
+    </div>
+  );
+};
+
+const ProgressBar = ({ bar_percent }) => {
+  return (
+    <div className="relative pt-1">
+      <div className="overflow-hidden h-6 mb-3 text-xs flex rounded-full bg-cyan-100">
+        <div style={{ width: `${bar_percent}%` }} className="bg-cyan-500"></div>
+      </div>
+    </div>
+  );
+};
+
+const SkillList = ({ title, list }) => {
+  return (
+    <div className="font-mono text-left ">
+      <p className="pl-3 my-1 text-lg md:text-3xl text-cyan-500">{title}:</p>
+      <p className="pl-8 text-lg md:text-2xl text-cyan-100">{list}</p>
     </div>
   );
 };

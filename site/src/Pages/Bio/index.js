@@ -12,7 +12,7 @@ const Bio = () => {
         <p className="text-cyan-100 font-mono text-6xl px-10 pt-10 font-extrabold text-center">
           Bio
         </p>
-        <div className="bg-slate-700 text-center py-8 grid md:grid-cols-3 md:grid-rows-6 gap-2">
+        <div className="bg-slate-700 text-center py-8 md:grid md:grid-cols-3 md:grid-rows-6 gap-2">
           <div className="row-span-5 col-span-2 border-2 border-rose-500 rounded-3xl m-2">
             <div className="flex">
               <img

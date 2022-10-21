@@ -13,34 +13,158 @@ const Experience = () => {
             <p className="invisible">test</p>
           </div>
           <RightTimelineExperience
-            role="Assistant Store Manager"
-            date="Jan 2022 - Jan 2023"
-            desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
-            company="Dairy Queen"
+            role="Navigat.io"
+            date="Oct 2022"
+            desc={
+              <>
+                <p>
+                  Our team designed an AR navigation platform using Google Maps.
+                  For more information, see the projects page. <br />
+                  <b>Won:</b>
+                </p>
+                <ul type="circle">
+                  <li>• "Best use of Google Cloud Platform"</li>
+                  <li>• "Most Creative use of Twilio"</li>
+                </ul>
+              </>
+            }
+            company="Kent Hack Enough 2022"
             logo={Banana}
             isMajor={false}
           />
           <LeftTimelineExperience
-            role="Assistant Store Manager"
-            date="Jan 2022 - Jan 2023"
-            desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
+            role="ATR Lab"
+            date="May 2022 - Aug 2022"
+            desc={
+              <>
+                <ul type="circle">
+                  <li>
+                    • Developed a STEM-focused Educational Drone and Software
+                    Suite
+                  </li>
+                  <li>
+                    • Led a research project that resulted in a published paper
+                  </li>
+                  <li>
+                    • Won first place in official research presentation for the
+                    program
+                  </li>
+                </ul>
+              </>
+            }
+            company="Summer Undergraduate Research Experience"
+            logo={Banana}
+            isMajor={false}
+          />
+          <RightTimelineExperience
+            role="Undergraduate Researcher"
+            date="Jan 2022 - Present"
+            desc={
+              <>
+                <ul type="circle">
+                  <li>
+                    • Worked with Python, C++, and Node.JS to research and
+                    create STEM-education focused solutions
+                  </li>
+                  <li>
+                    • Combined hardware and software to develop novel solutions
+                    to common robotics problems
+                  </li>
+                  <li>• Mentored undergraduate and high school students</li>
+                </ul>
+              </>
+            }
             company="Advanced Telerobotics Research Lab"
             logo={Banana}
             isMajor={true}
           />
+          <LeftTimelineExperience
+            role="CS Scholarship"
+            date="Sep 2021"
+            desc={
+              <>
+                <ul type="circle">
+                  <li>
+                    • Scholarship given to select CS Majors in Ohio who have
+                    high potential
+                  </li>
+                  <li>• Offered opportunities to advance studies and career</li>
+                  <li>
+                    • Included a poster conference, where my team won "Best
+                    Presentation" award
+                  </li>
+                </ul>
+              </>
+            }
+            company="Choose Ohio First"
+            logo={Banana}
+            isMajor={false}
+          />
           <RightTimelineExperience
-            role="Assistant Store Manager"
-            date="Jan 2022 - Jan 2023"
-            desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
-            company="Dairy Queen"
+            role="B.S. in Computer Science"
+            date="Sep 2021 - Dec 2023 (est.)"
+            desc={
+              <>
+                <p>
+                  Current GPA: 3.7
+                  <br />
+                  Coursework:
+                </p>
+                <ul type="circle">
+                  <li>• Design and Analysis of Algorithms</li>
+                  <li>• Data Structures</li>
+                  <li>• Operating Systems</li>
+                  <li>• Databases</li>
+                  <li>• Human Interface Computing</li>
+                </ul>
+              </>
+            }
+            company="Kent State University"
             logo={Banana}
             isMajor={true}
           />
           <LeftTimelineExperience
             role="Assistant Store Manager"
-            date="Jan 2022 - Jan 2023"
-            desc="Test this is a test to see what happens when this description gets to be really long and super large I hope this doesn't break shit uh-oh"
+            date="Aug 2019 - Jul 2020"
+            desc={
+              <>
+                <p>
+                  I was hired as a standard employee, and had 3 promotions
+                  within 6 months to the position of Assistant Store Manager.
+                </p>
+                <ul type="circle">
+                  <li>
+                    {" "}
+                    • Managed a team of over 30 employees and shift leaders
+                  </li>
+                  <li>
+                    • Improved throughput of the store, nearly doubling income
+                    and becoming the largest store in the district
+                  </li>
+                </ul>
+              </>
+            }
             company="Dairy Queen"
+            logo={Banana}
+            isMajor={true}
+          />
+          <RightTimelineExperience
+            role="High School Diploma"
+            date="May 2019"
+            desc={
+              <>
+                <ul>
+                  <li>• 4.4 GPA</li>
+                  <li>• Graduated "Summa cum Laude"</li>
+                  <li>• Finished with 42 credit hours</li>
+                  <li>
+                    • Won "Best in Class Senior" Award and was interviewed on
+                    live TV
+                  </li>
+                </ul>
+              </>
+            }
+            company="Cuyahoga Falls High School"
             logo={Banana}
             isMajor={true}
           />
@@ -145,7 +269,7 @@ const ExperienceIcon = ({ logo, company, isMajor }) => {
     );
   return (
     <img
-      className="peer rounded-full w-32 h-32 border-rose-500 border-2 object-cover mx-auto mt-16"
+      className="peer rounded-full w-48 h-48 border-rose-500 border-2 object-cover mx-auto mt-8"
       src={logo}
       alt={company}
     />

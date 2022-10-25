@@ -40,12 +40,6 @@ const Projects = () => {
               sublink="rocket"
             />
             <ProjectItem
-              name="Quote Guesser"
-              desc='This project leverages the "Quotes API" to generate random famous quotes. The user is presented with one quote and four options of authors. If the user picks the correct option, they get a point and continue until they answer incorrectly.'
-              img={Elephant}
-              sublink="quote"
-            />
-            <ProjectItem
               name="Stock Algorithm Test Environment"
               desc="An environment used to learn about and attempt to build stock trading algorithms. Then, by implementing them using paper trading, you can view their performance over time."
               img={Elephant}
@@ -72,6 +66,12 @@ const Projects = () => {
               }
               img={ProjectImg}
               sublink="drone"
+            />
+            <ProjectItem
+              name="Quote Guesser"
+              desc='This project leverages the "Quotes API" to generate random famous quotes. The user is presented with one quote and four options of authors. If the user picks the correct option, they get a point and continue until they answer incorrectly.'
+              img={Elephant}
+              sublink="quotes"
             />
             <ProjectItem
               name="Portfolio Site"

@@ -9,9 +9,7 @@ const Experience = () => {
       <div className="bg-slate-700">
         <NavBar />
         <div className="bg-slate-700 text-center py-10">
-          <div className="z-0 left-[49vw] right[49vw] top-32 bottom-8 bg-rose-500 absolute text-rose-500 hide-mobile">
-            <p className="invisible">test</p>
-          </div>
+          <div className="z-0 left-[49vw] right-[49.5vw] top-32 bottom-8 bg-rose-500 absolute text-rose-500 hide-mobile py-0"></div>
           <RightTimelineExperience
             role="Navigat.io"
             date="Oct 2022"

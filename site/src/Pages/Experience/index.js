@@ -1,6 +1,12 @@
 import React from "react";
 import NavBar from "../../Components/NavBar";
 import Banana from "../../assets/images/project_temp.png";
+import CFalls from "../../assets/images/CFalls.png";
+import DQ from "../../assets/images/DQ.png";
+import KSU from "../../assets/images/KSU.png";
+import ATR from "../../assets/images/ATR.png";
+import COF from "../../assets/images/COF.png";
+import KHE from "../../assets/images/KHE.png";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const Experience = () => {
@@ -27,7 +33,7 @@ const Experience = () => {
               </>
             }
             company="Kent Hack Enough 2022"
-            logo={Banana}
+            logo={KHE}
             isMajor={false}
           />
           <LeftTimelineExperience
@@ -51,7 +57,7 @@ const Experience = () => {
               </>
             }
             company="Summer Undergraduate Research Experience"
-            logo={Banana}
+            logo={KSU}
             isMajor={false}
           />
           <RightTimelineExperience
@@ -73,7 +79,7 @@ const Experience = () => {
               </>
             }
             company="Advanced Telerobotics Research Lab"
-            logo={Banana}
+            logo={ATR}
             isMajor={true}
           />
           <LeftTimelineExperience
@@ -95,7 +101,7 @@ const Experience = () => {
               </>
             }
             company="Choose Ohio First"
-            logo={Banana}
+            logo={COF}
             isMajor={false}
           />
           <RightTimelineExperience
@@ -118,7 +124,7 @@ const Experience = () => {
               </>
             }
             company="Kent State University"
-            logo={Banana}
+            logo={KSU}
             isMajor={true}
           />
           <LeftTimelineExperience
@@ -143,7 +149,7 @@ const Experience = () => {
               </>
             }
             company="Dairy Queen"
-            logo={Banana}
+            logo={DQ}
             isMajor={true}
           />
           <RightTimelineExperience
@@ -163,7 +169,7 @@ const Experience = () => {
               </>
             }
             company="Cuyahoga Falls High School"
-            logo={Banana}
+            logo={CFalls}
             isMajor={true}
           />
         </div>
